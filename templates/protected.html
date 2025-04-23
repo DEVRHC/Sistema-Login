@@ -2,12 +2,83 @@
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
+  <style>
+    /* Resetando a margem e preenchimento padrão */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    /* Estilo geral do corpo */
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f0f2f5;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    /* Container principal */
+    .container {
+      background-color: white;
+      padding: 2rem;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      width: 100%;
+      max-width: 400px;  /* Define uma largura máxima para o container */
+      text-align: center;
+    }
+
+    /* Título */
+    h1 {
+      font-size: 2rem;
+      color: #333;
+      margin-bottom: 1rem;
+    }
+
+    /* Estilo do conteúdo da página protegida */
+    #protected-content {
+      font-size: 1rem;
+      color: #666;
+      margin-bottom: 1.5rem;
+    }
+
+    /* Estilo do botão */
+    button {
+      width: 100%;
+      padding: 0.7rem;
+      background-color: #4caf50;
+      color: white;
+      border: none;
+      cursor: pointer;
+      font-size: 1rem;
+      border-radius: 4px;
+    }
+
+    /* Efeito de hover no botão */
+    button:hover {
+      background-color: #45a049;
+    }
+
+    /* Estilo da mensagem de erro ou sucesso */
+    .message {
+      margin-top: 1rem;
+      text-align: center;
+      color: red;
+    }
+
+  </style>
   <title>Página Protegida</title>
   <script src="/static/script.js" defer></script>
 </head>
 <body>
-  <h1>Página Protegida</h1>
-  <p id="protected-content">Carregando...</p>
-  <button onclick="logout()">Sair</button> <!-- NOVO BOTÃO -->
+  <div class="container">
+    <h1>Página Protegida</h1>
+    <p id="protected-content">Carregando...</p>
+    <button onclick="logout()">Sair</button>
+  </div>
 </body>
 </html>

@@ -3,6 +3,14 @@
 <head>
   <meta charset="UTF-8">
   <style>
+    /* Resetando a margem e preenchimento padrão */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    /* Estilo geral do corpo */
     body {
       font-family: Arial, sans-serif;
       background-color: #f0f2f5;
@@ -13,24 +21,34 @@
       margin: 0;
     }
 
+    /* Container principal */
     .container {
       background-color: white;
       padding: 2rem;
       border-radius: 8px;
       box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-      width: 300px;
-    }
-
-    h2 {
+      width: 100%;
+      max-width: 400px;  /* Define uma largura máxima para o container */
       text-align: center;
     }
 
-    input {
-      width: 100%;
-      padding: 0.5rem;
-      margin: 0.5rem 0;
+    /* Título */
+    h2 {
+      font-size: 1.8rem;
+      color: #333;
+      margin-bottom: 1rem;
     }
 
+    /* Estilo dos inputs */
+    input {
+      width: 100%;
+      padding: 0.8rem;
+      margin: 0.5rem 0;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+    }
+
+    /* Estilo do botão */
     button {
       width: 100%;
       padding: 0.7rem;
@@ -38,18 +56,23 @@
       color: white;
       border: none;
       cursor: pointer;
+      font-size: 1rem;
+      border-radius: 4px;
       margin-top: 0.5rem;
     }
 
+    /* Efeito de hover no botão */
     button:hover {
       background-color: #45a049;
     }
 
+    /* Estilo da mensagem de erro ou sucesso */
     .message {
       margin-top: 1rem;
       text-align: center;
       color: red;
     }
+
   </style>
   <title>Login</title>
   <script src="/static/script.js" defer></script>
