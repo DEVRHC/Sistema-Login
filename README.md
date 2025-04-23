@@ -49,4 +49,29 @@ project/
 │
 └── instance/           # Diretório para o banco de dados SQLite
     └── app.db              # Arquivo do banco de dados
+```
 
+## 🚀 Como executar o projeto
+
+Instale as dependências:
+
+```
+pip install -r requirements.txt
+```
+
+Execute o app:
+
+```
+python app.py
+```
+Acesse no navegador:
+http://localhost:5000
+
+## 🧪 Testando o sistema
+Acesse a página de cadastro para criar um novo usuário.
+
+Faça login com o usuário criado.
+
+Você será redirecionado para a área protegida.
+
+Clique em "Sair" para encerrar a sessão.
